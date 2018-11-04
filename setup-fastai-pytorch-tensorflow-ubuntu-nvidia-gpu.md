@@ -4,7 +4,7 @@ I have tested this setup on Ubuntu 18.04 LTS and 18.10 running both on a local m
 
 ## General setup
 
-Update system and install Nvidia drivers
+Update the system and install the Nvidia drivers
 
 ```sudo apt install ubuntu-drivers-common
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -22,7 +22,7 @@ source .bashrc
 
 ## Setup fast.ai incl. PyTorch
 
-Create conda environment for fastai
+Create a conda environment for fastai
 ```
 conda create -n fastai
 conda activate fastai
@@ -38,7 +38,7 @@ python
 >>> import torch
 >>> torch.cuda.get_device_name(0)
 ``` 
-Get fast.ai course v3 and run Jupyter Notebook
+Download fast.ai course v3 and run Jupyter Notebook
 ```
 sudo apt install git
 git clone https://github.com/fastai/course-v3.git
@@ -49,7 +49,7 @@ jupyter notebook
 
 ## Setup TensorFlow 
 
-Create TensorFlow environment and install the version that run on GPU
+Create a TensorFlow environment and install the TensorFlow version that runs on the GPU
 ```
 conda create -n tf
 conda activate tf
