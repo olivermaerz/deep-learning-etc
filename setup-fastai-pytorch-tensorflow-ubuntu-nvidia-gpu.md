@@ -40,6 +40,7 @@ python
 ``` 
 Get fast.ai course v3 and run Jupyter Notebook
 ```
+sudo apt install git
 git clone https://github.com/fastai/course-v3.git
 cd course-v3/nbs/dl1/
 jupyter notebook
