@@ -30,7 +30,7 @@ pip3.7 install --user --upgrade pip
 pip3.7 install --user pyyaml
 ```
 
-## Install PyTorch for CPU (nightly is required by fast.ai v1)
+## Install PyTorch for CPU
 
 Details here: https://gist.github.com/fgolemo/b973a3fa1aaa67ac61c480ae8440e754
 
@@ -38,6 +38,19 @@ Before compile it is important to export a couple of compilation flags in order 
 ```
 export NO_CUDA=1
 export NO_DISTRIBUTED=1
+```
+Also the build will run out of memory if you do not increase the size of the swap file (=increase virtual memory)
+Edit the swap config file with:
+```
+sudo vi /etc/dphys-swapfile
+```
+and add chage the CONF_SWAPSIZE to 2048:
+```
+CONF_SWAPSIZE=2048
+``` 
+restart the swap service:
+```
+sudo /etc/init.d/dphys-swapfile restart
 ```
 
 Download (may take a while depending on your internet speed) and compile PyTorch (this will definitely take a while)
@@ -51,3 +64,4 @@ cd pytorch
 python3.7 setup.py build
 sudo -E python3 setup.py install
 
+```
