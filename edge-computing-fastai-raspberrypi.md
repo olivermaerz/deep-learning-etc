@@ -18,7 +18,6 @@ Compile and install
 wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz
 tar -xzvf Python-3.7.1.tgz
 cd Python-3.7.1/
-clear
 ./configure --enable-optimazations
 make -j 4
 sudo make altinstall
