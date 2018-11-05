@@ -34,17 +34,17 @@ pip3.7 install --user pyyaml
 
 Details here: https://gist.github.com/fgolemo/b973a3fa1aaa67ac61c480ae8440e754
 
-Before compile it is important to export a couple of compilation flags in order to disable gpu support and distributed computing
+Export two compilation flags in order to disable gpu support and distributed computing
 ```
 export NO_CUDA=1
 export NO_DISTRIBUTED=1
 ```
-Also the build will run out of memory if you do not increase the size of the swap file (=increase virtual memory)
+Also the build will run out of memory if you do not increase the size of the swap file (=increase virtual memory size)
 Edit the swap config file with:
 ```
 sudo vi /etc/dphys-swapfile
 ```
-and add chage the CONF_SWAPSIZE to 2048:
+and change the CONF_SWAPSIZE to 2048:
 ```
 CONF_SWAPSIZE=2048
 ``` 
@@ -53,12 +53,11 @@ restart the swap service:
 sudo /etc/init.d/dphys-swapfile restart
 ```
 
-Download (may take a while depending on your internet speed) and compile PyTorch (this will definitely take a while)
+Download and compile PyTorch. This will take a while ...
 ```
 cd
-git clone --recursive https://github.com/pytorch/pytorch
-
 pip3.7 install pyyaml
+git clone --recursive https://github.com/pytorch/pytorch
 
 cd pytorch
 python3.7 setup.py build
