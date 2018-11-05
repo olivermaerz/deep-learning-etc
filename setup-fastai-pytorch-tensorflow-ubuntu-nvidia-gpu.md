@@ -29,6 +29,7 @@ conda activate fastai
 conda install -c pytorch pytorch-nightly cuda92
 conda install -c fastai torchvision-nightly
 conda install -c fastai fastai
+conda install jupyter
 ```
 
 Verify that PyTorch (and fast.ai) is really using the GPU 
