@@ -33,7 +33,7 @@ pip3.7 install --user pyyaml
 
 Details here: https://gist.github.com/fgolemo/b973a3fa1aaa67ac61c480ae8440e754
 
-Export two compilation flags in order to disable gpu support and distributed computing
+Export two compilation flags in order to disable Nvidia/CUDA support and distributed computing
 ```
 export NO_CUDA=1
 export NO_DISTRIBUTED=1
