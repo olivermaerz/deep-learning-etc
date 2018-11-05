@@ -55,9 +55,7 @@ sudo /etc/init.d/dphys-swapfile restart
 Download and compile PyTorch. This will take a while ...
 ```
 cd
-pip3.7 install pyyaml
 git clone --recursive https://github.com/pytorch/pytorch
-
 cd pytorch
 python3.7 setup.py build
 sudo -E python3 setup.py install
