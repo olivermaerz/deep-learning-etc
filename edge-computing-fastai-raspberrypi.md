@@ -22,23 +22,32 @@ cd Python-3.7.1/
 make -j 4
 sudo make altinstall
 ```
+You can now run the newly installed Python with ```python3.7```. The old Python 2.7 and 3.5 that come with Raspian are still installed and you can still call them with ```python``` and ```python3```.
 
-Update pip and install pyyaml
+Create and activate a new environment to use with PyTorch
 ```
-pip3.7 install --user --upgrade pip
-pip3.7 install --user pyyaml
+cd
+python3.7 -m venv py37pytorch
+source py37pytorch/bin/activate
+```
+Now while in the virtual enviromnent (py37pytorch) the command ```python``` and ```pip``` will run the binaries in the  ../py37pytorch/bin/ directory - which are from the newly installed Python 3.7: 
+
+Update pip and install some requisites 
+```
+pip install --upgrade pip
+pip install pyyaml pybind11 pgen cython wheel numpy
 ```
 
 ## Install PyTorch for CPU
 
 Details here: https://gist.github.com/fgolemo/b973a3fa1aaa67ac61c480ae8440e754
 
-Export two compilation flags in order to disable Nvidia/CUDA support and distributed computing
+Export two compilation flags in order to disable Nvidia/CUDA support and distributed computing. Othwise you will run into errors:
 ```
 export NO_CUDA=1
 export NO_DISTRIBUTED=1
 ```
-Also the build will run out of memory if you do not increase the size of the swap file (=increase virtual memory size)
+The build will run out of memory if you do not increase the size of the swap file (=increase virtual memory size)
 Edit the swap config file with:
 ```
 sudo vi /etc/dphys-swapfile
@@ -52,12 +61,20 @@ restart the swap service:
 sudo /etc/init.d/dphys-swapfile restart
 ```
 
+
 Download and compile PyTorch. This will take a while ...
 ```
 cd
+source py37pytorch/bin/activate
 git clone --recursive https://github.com/pytorch/pytorch
 cd pytorch
-python3.7 setup.py build
-sudo -E python3 setup.py install
+python setup.py build
+python setup.py install
+```
 
+Install fast.ai v1
+```
+cd
+source py37pytorch/bin/activate
+pip install fastai
 ```
