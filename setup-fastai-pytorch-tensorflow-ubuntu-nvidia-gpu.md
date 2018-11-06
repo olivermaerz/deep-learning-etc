@@ -1,10 +1,10 @@
 # Setup Ubuntu with multiple CUDA versions for PyTorch, fast.ai, TensorFlow on a machine with Nvidia GPU 
 
-I have tested this setup on Ubuntu 18.04 LTS and 18.10 running both on a local machine and on a AWS EC2 instance (p2.xlarge instance with stock Ubuntu 18.04 image). 
+I have tested this setup on Ubuntu 18.04 LTS and 18.10 running both on a local machine and on a AWS EC2 instance (p2.xlarge instance with stock Ubuntu 18.04 image). This install will take care of drivers and all. There is no need to separately install CUDA or CUDNN as Anaconda will install the required versions for each conda enviroment below. 
 
 ## General setup
 
-Update the system and install the Nvidia drivers
+Update the system and install the latest Nvidia drivers
 
 ```sudo apt install ubuntu-drivers-common
 sudo add-apt-repository ppa:graphics-drivers/ppa
@@ -32,7 +32,7 @@ conda install -c fastai fastai
 conda install jupyter
 ```
 
-Verify that PyTorch (and fast.ai) is really using the GPU 
+Verify that PyTorch (and therefore fast.ai) is really using the GPU 
 ```
 conda activate fastai
 python 
