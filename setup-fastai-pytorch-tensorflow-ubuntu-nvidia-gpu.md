@@ -20,10 +20,10 @@ bash Anaconda2-5.3.0-Linux-x86_64.sh
 source .bashrc
 ```
 
-## Setup fast.ai incl. PyTorch
+## Setup fast.ai (incl. PyTorch, CUDA, and CUDNN)
 
-Create a conda environment for fastai
-```
+Create a conda environment for fastai 
+``` 
 conda create -n fastai
 conda activate fastai
 conda install -c pytorch pytorch-nightly cuda92
@@ -49,7 +49,7 @@ jupyter notebook
 ```
 
 
-## Setup TensorFlow 
+## Setup TensorFlow (incl. CUDA and CUDNN)
 
 Create a TensorFlow environment and install the TensorFlow version that runs on the GPU
 ```
