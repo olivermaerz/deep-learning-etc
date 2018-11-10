@@ -10,8 +10,7 @@ Details here https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f plu
 Update system and install some required packages with apt
 ```
 sudo update && sudo upgrade
-sudo apt install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev 
-#see if still needed python-dev python-setuptools python-pip python-smbus libffi-dev git 
+sudo apt install build-essential tk-dev libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libssl-dev libbz2-dev libexpat1-dev liblzma-dev zlib1g-dev python-dev python-setuptools python-pip python-smbus libffi-dev git 
 sudo apt install libopenblas-dev libatlas-dev m4 libblas-dev cmake 
 #see if still needed python3-yaml cython
 ```
