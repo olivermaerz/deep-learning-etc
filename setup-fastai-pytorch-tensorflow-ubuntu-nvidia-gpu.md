@@ -55,7 +55,7 @@ Create a TensorFlow environment and install the TensorFlow version that runs on 
 ```
 conda create -n tf
 conda activate tf
-conda install tensorflow-gpu
+conda install tensorflow-gpu pandas matplotlib jupyter notebook scipy scikit-learn
 ```
 
 Verify that TensorFlow is really using the GPU
