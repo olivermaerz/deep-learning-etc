@@ -89,3 +89,13 @@ cd
 source py37pytorch/bin/activate
 pip install fastai
 ```
+
+
+## Alternative install
+
+Install caffe2 first
+```
+pip install numpy pyyaml
+cd pytorch
+./scripts/build_raspbian.sh
+```
