@@ -6,7 +6,7 @@ This is work in progress ...
 
 ## Update system and install required packages with apt
 ```
-sudo update && sudo upgrade
+sudo apt update && sudo apt upgrade
 sudo apt install git libssl-dev build-essential  libncurses5-dev libncursesw5-dev libreadline6-dev libdb5.3-dev libgdbm-dev libsqlite3-dev libbz2-dev libexpat1-dev liblzma-dev libffi-dev tk-dev uuid-dev cmake libopenblas-dev libatlas-dev libblas-dev m4 libjpeg-dev zlib1g-dev
 ```
 
