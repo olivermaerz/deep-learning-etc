@@ -82,7 +82,6 @@ cd pytorch
 git submodule update --init
 python setup.py install
 ```
-... this will take a while
 
 Install fast.ai v1.0
 ```
