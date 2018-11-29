@@ -84,7 +84,6 @@ export NO_DISTRIBUTED=1
 cd pytorch
 # optional - to use rc1: checkout tags/v1.0rc1 -b rc1-fastai
 git submodule update --init
-python setup.py build
 python setup.py install
 ```
 
