@@ -88,4 +88,5 @@ Install fast.ai v1.0
 cd
 source py37pytorch/bin/activate
 pip install fastai
+# you may have to downgrade regex for spacy and run: pip install regex==2018.01.10
 ```
