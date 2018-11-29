@@ -1,7 +1,7 @@
 This is work in progress ... 
 
 
-# Edge computing with fast.ai v1. Setting up fast.ai 1.0 with Python 3.7 and PyTorch on a Raspberry Pi 3
+# Edge computing with fast.ai. Setting up fast.ai 1.0 with Python 3.7 and PyTorch on a Raspberry Pi 3
 
 
 ## Update system and install required packages with apt
