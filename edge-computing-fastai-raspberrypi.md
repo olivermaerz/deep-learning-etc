@@ -13,7 +13,7 @@ sudo apt install git libssl-dev build-essential  libncurses5-dev libncursesw5-de
 ## Install Python 3.7 
 Details here https://gist.github.com/dschep/24aa61672a2092246eaca2824400d37f, https://stackoverflow.com/questions/27022373/python3-importerror-no-module-named-ctypes-when-using-value-from-module-mul, and https://bugs.python.org/issue30090
 
-Compile and install 
+Download, compile and install 
 ```
 wget https://www.python.org/ftp/python/3.7.1/Python-3.7.1.tgz
 tar -xzvf Python-3.7.1.tgz
