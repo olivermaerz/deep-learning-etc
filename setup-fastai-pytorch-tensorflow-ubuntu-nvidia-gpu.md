@@ -9,6 +9,7 @@ Update the system and install the latest Nvidia drivers
 ```sudo apt install ubuntu-drivers-common
 sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update && sudo apt upgrade 
+sudo apt install ubuntu-drivers-common
 sudo ubuntu-drivers autoinstall
 sudo reboot
 ```
