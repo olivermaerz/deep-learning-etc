@@ -25,7 +25,7 @@ source .bashrc
 
 Create a conda environment for fastai 
 ``` 
-conda create -n fastai
+conda create -n fastai python=3.7
 conda activate fastai
 conda install -c pytorch pytorch torchvision
 conda install -c fastai fastai
@@ -34,7 +34,7 @@ conda install jupyterlab
 
 Verify that PyTorch (and therefore fast.ai) is really using the GPU 
 ```
-conda activate fastai python=3.7
+conda activate fastai 
 python 
 >>> import torch
 >>> torch.cuda.get_device_name(0)
