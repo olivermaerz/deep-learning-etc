@@ -23,12 +23,11 @@ source .bashrc
 
 ## Setup fast.ai (incl. PyTorch, CUDA, and CUDNN)
 
-Create a conda environment for fastai 
+Create a conda environment for fast.ai and PyTorch for Nvidia CPU 
 ``` 
 conda create -n fastai python=3.7
 conda activate fastai
-conda install -c pytorch pytorch torchvision
-conda install -c fastai fastai
+conda install -c pytorch -c fastai fastai
 conda install jupyterlab
 ```
 
@@ -39,6 +38,16 @@ python
 >>> import torch
 >>> torch.cuda.get_device_name(0)
 ``` 
+
+Optionally create environment for fast.ai and pytorch using CPU only
+``` 
+conda create -n fastai python=3.7
+conda activate fastai
+conda install -c pytorch pytorch-cpu torchvision
+conda install -c fastai fastai
+conda install jupyterlab
+```
+
 Download fast.ai course v3 and run Jupyter Notebook
 ```
 sudo apt install git
@@ -66,3 +75,11 @@ python
 >>> import tensorflow as tf
 >>> sess = tf.Session(config=tf.ConfigProto(log_device_placement=True)) 
 ```
+
+Optionally create TensorFlow environment that uses CPU only
+```
+conda create -n tf-cpu python=3.7
+conda activate tf-cpu
+conda install tensorflow pandas matplotlib jupyterlab notebook scipy scikit-learn opencv
+```
+
