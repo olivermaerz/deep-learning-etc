@@ -34,7 +34,7 @@ conda install jupyterlab
 
 Verify that PyTorch (and therefore fast.ai) is really using the GPU 
 ```
-conda activate fastai
+conda activate fastai python=3.7
 python 
 >>> import torch
 >>> torch.cuda.get_device_name(0)
@@ -53,7 +53,7 @@ jupyter notebook
 
 Create a TensorFlow environment and install the TensorFlow version that runs on the GPU
 ```
-conda create -n tf
+conda create -n tf python=3.7
 conda activate tf
 conda install tensorflow-gpu pandas matplotlib jupyterlab notebook scipy scikit-learn opencv
 ```
