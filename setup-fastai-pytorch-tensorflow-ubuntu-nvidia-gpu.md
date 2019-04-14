@@ -16,8 +16,8 @@ sudo reboot
 
 Install Anaconda (replace the filename below with the latest version available - check: https://www.anaconda.com/download/#linux)
 ```
-wget https://repo.anaconda.com/archive/Anaconda3-5.3.1-Linux-x86_64.sh
-bash Anaconda3-5.3.1-Linux-x86_64.sh
+wget https://repo.anaconda.com/archive/Anaconda3-2019.03-Linux-x86_64.sh
+bash Anaconda3-2019.03-Linux-x86_64.sh
 source .bashrc
 ```
 
