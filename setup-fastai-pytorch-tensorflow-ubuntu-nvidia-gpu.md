@@ -45,8 +45,9 @@ sudo apt install git
 git clone https://github.com/fastai/course-v3.git
 cd course-v3/nbs/dl1/
 conda activate fastai
-jupyter notebook
+jupyter lab
 ```
+Note: Tunnel port 8888 from the jupyter notebook or lab through ssh (ssh -L 8888:localhost:8888 ubuntu@*<hostname>*.*<region>*.compute.amazonaws.com
 
 
 ## Setup TensorFlow (incl. CUDA and CUDNN)
